@@ -22,9 +22,8 @@ app.get('/test2',function(req,res){
 });
 
 app.get('/test3',function(req,res){
-    res.send('this is test three');
-});
-
+        res.send('this is test three');
+    });
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
