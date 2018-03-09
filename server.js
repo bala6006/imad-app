@@ -17,7 +17,7 @@ app.get('/test1', function (req,res){
     res.send('this is test one');
 });
 
-app.get('/test2',function(res,req){
+app.get('/test2',function(req,res){
     res.send('this is test two');
 });
 
