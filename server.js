@@ -17,6 +17,11 @@ app.get('tes1', function (req,res){
     res.sendFile(path.join(__dirname,'ui','tes1.html'));
 });
 
+
+app.get('test1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'test1.html'));
+});
+
 app.get('/test2',function(req,res){
     res.send('this is test two');
 });
