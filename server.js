@@ -13,9 +13,22 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('tes1', function (req,res){
+    res.sendFile(path.join(__dirname,'ui','tes1.html'));
+});
+
+
 app.get('/test', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'test.html'));
 });
+
+app.get('/test2',function(req,res){
+    res.send('this is test two');
+});
+
+app.get('/test3',function(req,res){
+        res.send('this is test three');
+    });
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
