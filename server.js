@@ -18,8 +18,8 @@ app.get('tes1', function (req,res){
 });
 
 
-app.get('test1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'test1.html'));
+app.get('test', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'test.html'));
 });
 
 app.get('/test2',function(req,res){
