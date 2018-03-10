@@ -34,7 +34,7 @@ function test(data){
     var title=data.title;
     var head=data.head;
     var date=data.date;
-    var content=data.date;
+    var content=data.content;
 var htmltest=`
 <!DOCTYPE html>
 <html>
@@ -46,6 +46,7 @@ var htmltest=`
         <link href="/ui/style.css" rel="stylesheet"/>
     </head>
     <body>
+    <div align=center>
         <table border=5% align=center>
             <tr>
                 <td>
@@ -63,6 +64,7 @@ var htmltest=`
         <DIV>
              ${content}
         </DIV>
+        </div>
     </body>
 </html>
 `;
