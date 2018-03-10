@@ -38,11 +38,11 @@ title: 'THIS IS TEST TWO',
 
 };
 
-function test(data){
-    var title=data.title;
-    var head=data.head;
-    var date=data.date;
-    var content=data.content;
+function test(da){
+    var title=da.title;
+    var head=da.head;
+    var date=da.date;
+    var content=da.content;
 var htmltest=`
 <!DOCTYPE html>
 <html>
