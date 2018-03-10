@@ -79,9 +79,9 @@ var htmltest=`
 return htmltest;
 }
 
-app.get('/:ing', function (req, res) {
-    var ing=req.params.ing;
-  res.send(test(first[ing]));
+app.get('/:testing', function (req, res) {
+    var testing=req.params.testing;
+  res.send(test(first[testing]));
 });
 
 app.get('/test', function (req, res) {
