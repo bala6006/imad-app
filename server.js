@@ -79,7 +79,7 @@ var htmltest=`
 return htmltest;
 }
 
-app.get('/testing', function (req, res) {
+app.get('/:testing', function (req, res) {
     var testing=req.params.testing;
   res.send(test(first[testing]));
 });
