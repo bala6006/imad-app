@@ -9,7 +9,7 @@ body {
 }
 
 .text-big {
-    font-size: 5000%;
+    font-size: 300%;
 }
 
 .bold {
@@ -23,7 +23,7 @@ body {
 .design{
                 max-width : 800px;
                 margin: 0 auto;
-                color : blue;
+                color : green;
                 font-family:sams-serif;
 }
 
