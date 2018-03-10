@@ -80,7 +80,7 @@ return htmltest;
 }
 
 app.get('/:ing', function (req, res) {
-    var testing=req.params.ing;
+    var ing=req.params.ing;
   res.send(test(first[ing]));
 });
 
