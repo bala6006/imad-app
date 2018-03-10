@@ -14,21 +14,29 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
-var testone={
+var first={
+testone: {
     title: 'THIS IS TEST ONE',
     head: 'TEST-ONE',
     date: '10-MAR-2018',
     content: `
     <div>
     Here we going to executed test one document
+    </div>`
+},
+testtwo: {
+
+title: 'THIS IS TEST TWO',
+    head: 'TEST-TWO',
+    date: '11-MAR-2018',
+    content: `
+    <div>
+    Here we going to executed test two document
+    </div>`
     
-    
-    </div>
-    `
-    
+}
+
 };
-
-
 
 function test(data){
     var title=data.title;
@@ -71,12 +79,9 @@ var htmltest=`
 return htmltest;
 }
 
-
-
-
-
-app.get('/testone', function (req, res) {
-  res.send(test(testone));
+app.get('/testing', function (req, res) {
+    var testing=req.params.testing;
+  res.send(test(first[testing]));
 });
 
 app.get('/test', function (req, res) {
