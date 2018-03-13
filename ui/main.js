@@ -7,9 +7,9 @@ var img=document.getElementById('madi');
 function marginRight()
 {
     var marginLeft=marginLeft+1;
-    madi.style.marginLeft=marginLeft+"px";
+    img.style.marginLeft=marginLeft+"px";
 }
-madi.onclick=function(){
+img.onclick=function(){
   var inter=setInterval(marginRight,100);
 };
 
