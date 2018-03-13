@@ -10,6 +10,6 @@ function moveR()
     img.style.marginLeft=left+"px";
 }
 img.onclick=function(){
-  var inter=setInterval(moveR,'100');
+  var inter=setInterval(moveR,100);
 };
 
