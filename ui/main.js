@@ -3,10 +3,10 @@ console.log('Loaded!');
 var ele=document.getElementById('testing');
 ele.innerHTML='HI BALA';
 var img=document.getElementById('madi');
-
+var marginLeft=0;
 function marginRight()
 {
-    var marginLeft=marginLeft+1;
+    marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft + 'px';
 }
 img.onclick=function(){
