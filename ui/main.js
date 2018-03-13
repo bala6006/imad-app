@@ -7,7 +7,7 @@ var img=document.getElementById('madi');
 function marginRight()
 {
     var marginLeft=marginLeft+1;
-    img.style.marginLeft=marginLeft+"px";
+    img.style.marginLeft=marginLeft + 'px';
 }
 img.onclick=function(){
   var inter=setInterval(marginRight,100);
