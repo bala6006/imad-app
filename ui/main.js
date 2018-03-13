@@ -9,7 +9,7 @@ function marginRight()
     var marginLeft=marginLeft+10;
     madi.style.marginLeft=marginLeft+"px";
 }
-img.onclick=function(){
+madi.onclick=function(){
   var inter=setInterval(marginRight,100);
 };
 
