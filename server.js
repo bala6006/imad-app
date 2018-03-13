@@ -34,6 +34,15 @@ title: 'THIS IS TEST TWO',
     Here we going to executed test two document
     </div>`
     
+},
+testthree:{
+    title:'THIS IS A TEST THREE',
+    head:'TEST-THREE',
+    date: '13-03-2018',
+    content:`
+    div>
+    here we going to excuted the test three
+    </div>`
 }
 
 };
