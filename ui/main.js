@@ -4,12 +4,12 @@ var ele=document.getElementById('testing');
 ele.innerHTML='HI BALA';
 var img=document.getElementById('madi');
 
-function moveR()
+function marginRight()
 {
-    var left=left+10;
-    img.style.marginLeft=left+"px";
+    var marginLeft=marginLeft+10;
+    img.style.marginLeft=marginLeft+"px";
 }
 img.onclick=function(){
-  var inter=setInterval(moveR,100);
+  var inter=setInterval(marginRight,100);
 };
 
