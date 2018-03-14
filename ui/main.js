@@ -4,10 +4,19 @@ var ele=document.getElementById('testing');
 ele.innerHTML='HI BALA';
 var img=document.getElementById('madi');
 var marginLeft=0;
+var left=0;
+function marginLeft()
+{
+    left=left+10;
+    img.style.marginLeft=left+"px";
+}
 function marginRight()
 {
-    marginLeft=marginLeft+10;
-    img.style.marginRight=marginLeft + 'px';
+    marginL=marginL+10;
+    img.style.marginRight=marginL + 'px';
+    img.onclick=function(){
+      var interone=setInterval(marginLeft,100);  
+    };
 }
 img.onclick=function(){
   var inter=setInterval(marginRight,100);
