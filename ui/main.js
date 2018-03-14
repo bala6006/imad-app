@@ -3,7 +3,7 @@ console.log('Loaded!');
 var ele=document.getElementById('testing');
 ele.innerHTML='HI BALA';
 var img=document.getElementById('madi');
-var marginLeft=0;
+var marginL=0;
 var left=0;
 function marginLeft()
 {
