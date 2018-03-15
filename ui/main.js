@@ -28,7 +28,8 @@ var counter=0;
 button.onClick=function(){
     
     counter=counter+1;
-    span.innerHtml=counter.toString();
+    var span=document.getElementById(count);
+    span.innerHTML=counter.toString();
     
 };
 
