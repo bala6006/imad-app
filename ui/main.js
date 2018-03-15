@@ -23,13 +23,31 @@ img.onclick=function(){
 };**/
 
 var button=document.getElementById("counter");
-var counter=0;
+//var counter=0;
 
 button.onclick=function(){
     
-    counter=counter+1;
-    var span=document.getElementById("one");
-    span.innerHTML=counter.toString();
+    //create request object
+    var request=new XMLHttpRequest();
+    
+    //get response to store var
+    
+    request.getreadystatechange=function(){
+        if(request.readystate==XMLHttpRequest.DONE)
+        {
+        var counter=request.responseText;
+        var span=document.getElementById("one");
+        span.innerHTML=counter.toString();
+        }
+    };
+    //MAKE REQUEST
+    request.open('GET','http://gbala6006.imad.hasura-app.io/counter',true);
+    request.send(null);
+   
+   
+   // counter=counter+1;
+    //var span=document.getElementById("one");
+    //span.innerHTML=counter.toString();
   
 };
 
