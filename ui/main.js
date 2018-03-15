@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/**console.log('Loaded!');
 
 var ele=document.getElementById('testing');
 ele.innerHTML='HI BALA';
@@ -20,7 +20,7 @@ function marginRight()
 }
 img.onclick=function(){
   var inter=setInterval(marginRight,100);
-};
+};**/
 
 var button=document.getElementById('counter');
 var counter=0;
