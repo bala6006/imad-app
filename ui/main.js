@@ -22,3 +22,13 @@ img.onclick=function(){
   var inter=setInterval(marginRight,100);
 };
 
+var button=document.getElementById(counter);
+var counter=0;
+
+button.onClick=function(){
+    
+    counter=cunter+1;
+    span.innerHtml=count.toString();
+    
+};
+
