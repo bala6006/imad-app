@@ -32,10 +32,11 @@ button.onclick=function(){
     //alert(request);
     //get response to store var
     
-    request.onreadystatechange=function(){
+    request.onreadystatechange=function()
+    {
         alert('function');
-        if(request.readystate==4)
-        {
+       // if(request.readystate==XMLHttpRequest.DONE)
+        //{
             alert('before enter');
             if(request.readyState == 4 && request.status==200)
             {
@@ -44,7 +45,7 @@ button.onclick=function(){
         var span=document.getElementById("one");
         span.innerHTML=counter.toString();
         }
-        }
+       // }
     };
     //MAKE REQUEST
     //alert('before make');
