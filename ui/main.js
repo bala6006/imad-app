@@ -35,6 +35,7 @@ button.onclick=function(){
     request.getreadystatechange=function(){
         if(request.readystate==XMLHttpRequest.DONE)
         {
+            alert('before enter');
             if(request.status==200)
             {
         var counter=request.responseText;
