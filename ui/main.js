@@ -29,7 +29,7 @@ button.onclick=function(){
     alert('onclick');
     //create request object
     var request=new XMLHttpRequest();
-    
+    alert(request);
     //get response to store var
     
     request.getreadystatechange=function(){
