@@ -26,7 +26,7 @@ var button=document.getElementById('counter');
 //var counter=0;
 
 button.onclick=function(){
-    alert('onclick');
+    //alert('onclick');
     //create request object
     var request=new XMLHttpRequest();
     //alert(request);
@@ -34,14 +34,14 @@ button.onclick=function(){
     
     request.onreadystatechange=function()
     {
-        alert('function');
+       // alert('function');
        // if(request.readystate==XMLHttpRequest.DONE)
         //{
-            alert('before enter');
-            if(request.readyState == 4 && request.status==200)
+            //alert('before enter');
+            if(request.status==200)
             {
         var counter=request.responseText;
-        alert('processing : '+counter);
+       // alert('processing : '+counter);
         var span=document.getElementById("one");
         span.innerHTML=counter.toString();
         }
