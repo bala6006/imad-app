@@ -35,9 +35,12 @@ button.onclick=function(){
     request.getreadystatechange=function(){
         if(request.readystate==XMLHttpRequest.DONE)
         {
+            if(request.status==200)
+            {
         var counter=request.responseText;
         var span=document.getElementById("one");
         span.innerHTML=counter.toString();
+        }
         }
     };
     //MAKE REQUEST
