@@ -34,7 +34,7 @@ button.onclick=function(){
     
     request.onreadystatechange=function(){
         alert('function');
-        if(request.readystate==XMLHttpRequest.DONE)
+        if(request.readystate==4)
         {
             alert('before enter');
             if(request.readyState == 4 && request.status==200)
