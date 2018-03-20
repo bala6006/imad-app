@@ -29,7 +29,7 @@ button.onclick=function(){
     alert('onclick');
     //create request object
     var request=new XMLHttpRequest();
-    alert(request);
+    //alert(request);
     //get response to store var
     
     request.onreadystatechange=function(){
@@ -37,7 +37,7 @@ button.onclick=function(){
         if(request.readystate==XMLHttpRequest.DONE)
         {
             alert('before enter');
-            if(request.status==200)
+            if(request.readyState == 4 && request.status==200)
             {
         var counter=request.responseText;
         alert('processing : '+counter);
