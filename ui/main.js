@@ -38,6 +38,7 @@ button.onclick=function(){
             if(request.status==200)
             {
         var counter=request.responseText;
+        alert('processing : '+counter);
         var span=document.getElementById("one");
         span.innerHTML=counter.toString();
         }
