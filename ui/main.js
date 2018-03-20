@@ -33,6 +33,7 @@ button.onclick=function(){
     //get response to store var
     
     request.getreadystatechange=function(){
+        alert('function');
         if(request.readystate==XMLHttpRequest.DONE)
         {
             alert('before enter');
