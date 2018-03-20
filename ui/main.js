@@ -47,8 +47,10 @@ button.onclick=function(){
         }
     };
     //MAKE REQUEST
+    alert('before make');
     request.open('GET','http://gbala6006.imad.hasura-app.io/counter',true);
     request.send(null);
+    alert('after make');
    
    
    // counter=counter+1;
