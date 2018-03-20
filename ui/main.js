@@ -32,7 +32,7 @@ button.onclick=function(){
     alert(request);
     //get response to store var
     
-    request.getreadystatechange=function(){
+    request.onreadystatechange=function(){
         alert('function');
         if(request.readystate==XMLHttpRequest.DONE)
         {
