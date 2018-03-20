@@ -44,7 +44,7 @@ button.onclick=function(){
         }
     };
     //MAKE REQUEST
-    request.open('GET','http://gbala6006.imad.hasura-app.io/counter',true);
+    request.open('GET','http://gbala6006.imad.hasura-app.io',true);
     request.send(null);
    
    
