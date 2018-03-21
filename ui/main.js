@@ -63,9 +63,9 @@ button.onclick=function(){
 var inp=document.getElementById("name");
 alert('inp');
 var nam=inp.value;
-alert(nam);
+//alert(nam);
 var sut=document.getElementById("sub");
-alert(sub);
+//alert(sub);
 sut.onclick=function(){
     alert('before');
     var names=['name1','name2','name3','name4'];
