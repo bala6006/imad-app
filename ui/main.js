@@ -60,3 +60,16 @@ button.onclick=function(){
   
 };
 
+var inp=document.getElementById("name");
+var nam=inp.value;
+var sub=document.getElementById("sub");
+sub.onclick=function(){
+    var names=['name1','name2','name3','name4'];
+    var list="";
+   for(var i=0;i<length.names;i++){
+    list='<li>'+names[i]+'<li>';
+   }
+   var lis=document.getElementById("listname");
+   lis.innerHTML=list;
+};
+
