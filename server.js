@@ -7,6 +7,7 @@ app.use(morgan('combined'));
 
 
 var counter=0;
+var names=[];
 app.get('/counter/:n',function(req,res)
 {
    // counter=counter+1;
