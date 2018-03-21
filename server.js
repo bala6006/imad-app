@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var names=[];
 app.get('/submit:name',function(req,res){
    var name=req.params.name;
    names.push(name);
