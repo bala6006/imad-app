@@ -4,13 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var names=[];
-app.get('/submit/:name',function(req,res){
-   var nam=req.params.name;
-   names.push(nam);
-   res.send(JSON.stringfy(names));
-    
-});
+
 
 var counter=0;
 app.get('/counter',function(req,res)
@@ -19,6 +13,14 @@ app.get('/counter',function(req,res)
     res.send(counter.toString());
 });
 
+var names=[];
+app.get('/submit/:name',function(req,res)
+{
+   var nam=req.params.name;
+   names.push(nam);
+   res.send(JSON.stringfy(names));
+    
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
