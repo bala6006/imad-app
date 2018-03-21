@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 var names=[];
 app.get('/submit:name',function(req,res){
-   var name=req.params.name;
+   var nam=req.params.name;
    names.push(name);
    res.send(JSON.stringfy(names));
     
