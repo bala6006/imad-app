@@ -71,8 +71,8 @@ sut.onclick=function(){
     var names=['name1','name2','name3','name4'];
     var list="";
     alert('before for');
-    alert(length.names);
-   for(var i=0;i<length.names;i++){
+    alert(names.length);
+   for(var i=0;i<names.length;i++){
        alert('inside for');
     list+='<li>'+names[i]+'<li>';
    }
