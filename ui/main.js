@@ -61,19 +61,19 @@ button.onclick=function(){
 };
 
 var inp=document.getElementById("name");
-alert('inp');
+//alert('inp');
 var nam=inp.value;
 //alert(nam);
 var sut=document.getElementById("sub");
 //alert(sub);
 sut.onclick=function(){
-    alert('before');
+    //alert('before');
     var names=['name1','name2','name3','name4'];
     var list="";
-    alert('before for');
-    alert(names.length);
+   // alert('before for');
+    //alert(names.length);
    for(var i=0;i<names.length;i++){
-       alert('inside for');
+      // alert('inside for');
     list+='<li>'+names[i]+'<li>';
    }
    var lis=document.getElementById("listname");
