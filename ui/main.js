@@ -64,13 +64,14 @@ var inp=document.getElementById("name");
 alert('inp');
 var nam=inp.value;
 alert(nam);
-var sub=document.getElementById("sub");
+var sut=document.getElementById("sub");
 alert(sub);
-sub.onclick=function(){
+sut.onclick=function(){
     alert('before');
     var names=['name1','name2','name3','name4'];
     var list="";
     alert('before for');
+    alert(length.names);
    for(var i=0;i<length.names;i++){
        alert('inside for');
     list+='<li>'+names[i]+'<li>';
