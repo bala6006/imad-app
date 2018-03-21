@@ -7,10 +7,13 @@ app.use(morgan('combined'));
 
 
 var counter=0;
-app.get('/counter',function(req,res)
+app.get('/counter/:n',function(req,res)
 {
-    counter=counter+1;
-    res.send(counter.toString());
+   // counter=counter+1;
+    //res.send(counter.toString());
+     var nam=req.params.n;
+   names.push(nam);
+   res.send(JSON.stringfy(names));
 });
 
 var names=[];
