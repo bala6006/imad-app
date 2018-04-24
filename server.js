@@ -5,7 +5,15 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
+var pool=require('pg').Pool;
+var config={
+    user:'gbala6006',
+    database:'gbala6006',
+    host:'db.imad.hasura.io',
+    port:'5432',
+    password:process.env.DB.PASSWORD
+    
+};
 var counter=0;
 var names=[];
 app.get('/counter/:n',function(req,res)
@@ -108,6 +116,22 @@ var htmltest=`
 `;
 return htmltest;
 }
+var pool=new Pool('config');
+app.get('/test-db',function(req,res){
+    pool.query('select * from user',function(err,result){
+        if(err)
+        {
+            res.status(500).send(err.toString());
+        }
+        else
+        {
+            res.send(JSON.stringfy(result));
+        }
+        
+    });
+    //here itself we going to create SQL query
+    
+});
 
 app.get('/:testing', function (req, res) {
     var testing=req.params.testing;
